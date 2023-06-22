@@ -1,0 +1,462 @@
+<DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Saheeto Hotel</title>
+<link rel="stylesheet" href="tether/tether.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="dropdown/css/style.css">
+<link rel="stylesheet" href="theme/css/style.css">
+<link rel="stylesheet" href="mobirise/css/mbr-additional.css" type="text/css">
+    
+  
+
+<style type="text/css">
+    html,
+    body,
+    header,
+    .view {
+    height: 100%;
+    }
+
+    @media (max-width: 740px) {
+
+    html,
+    body,
+    header,
+    .view {
+        height: 1050px;
+    }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+
+    html,
+    body,
+    header,
+    .view {
+        height: 700px;
+        background-color: aliceblue;          
+    }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+        .navbar:not(.top-nav-collapse) {
+            background: #1C2331 !important;
+        }
+        }
+
+
+    #description{
+    height:100%;
+    width:100%;
+    background-color:whitesmoke;
+    }
+    #description-image{height: 100%; width:35%; float: left; margin-left: 30px; margin-top: 2%;}
+    #description-text{height: 100%; width: 55%;float: right; margin-top: 2%; margin-right: 2%;}
+        
+
+    .hotel_reserve_box {
+        /* margin-top: 40px; */
+        margin-left: 850px;
+        margin-right: 0px;
+        /* margin-bottom: 60px; */
+        padding: 40px 50px;
+        box-shadow: 3px 5px 10px #7527b0;
+    }
+    .online_food_delivery_box {
+        margin-top: 50px;
+        margin-left: 350px;
+        margin-right: 350px;
+        margin-bottom: 60px;
+        padding: 20px 40px;
+        background-color: #d4c0b9;
+        box-shadow: 3px 5px 10px #714c4a;
+    }
+    .result_box {
+        margin-top: 15%;
+        margin-left: 350px;
+        margin-right: 350px;
+        margin-bottom: 60px;
+        padding: 20px 40px;
+        background-color: #d4c0b9;
+        box-shadow: 3px 5px 10px #8BC34A;
+    }
+    .result_box_text {
+        color: #232222;
+        font-size: 20px;
+        text-align: center;
+        padding-top:10px;
+    }
+    .result_box_text span {
+        color: #614136;
+        font-size: 26px;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+    <section class="menu cid-qwYGTl41gN" once="menu" id="menu1-5" data-rv-view="350">
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <div class="container">
+            <a target="_top" href="#" style="font-weight: 900; color: lavenderblush; font-size: 40px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Saheeto Suites</a> 
+             <br/>
+                 <!-- Right --> 
+                 <ul class="navbar-nav nav-flex-icons"> 
+                    <li class="nav-item active">
+                         <a class="nav-link" href="Saheeto.html"  style="color: red;">Home
+                           <span class="sr-only">(current)</span>
+                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" target="_blank" style="color: red;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book a room.html" target="_blank"  style="color: red;">
+                        Book A Room</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="small chops.html" target="_blank"  style="color: red;">Order Small Chops</a>
+                    </li>
+                 </ul>                          
+        </div>
+      </nav> 
+      <!-- Navbar -->
+      </section>
+      <!-- Full Page Intro -->
+      <section class="cid-qx07ExyWEo" id="image1-n" data-rv-view="361">
+        <div style="background-image:url(images/office.jpg);">         
+            <div class="hotel_reserve_box">
+                <h3 style="color:lavenderblush;"> Reservation Form </h3><br>
+                <form>
+                    <div class="form-group">
+                        <label style="color: whitesmoke; font-size: larger;">Room/Suite Type</label>
+                        <select class="form-control" id="room_type" onchange="finalCost()">
+                            <option value="0" selected>Select Room/Suite </option>
+                            <option value="1"> Standard </option>
+                            <option value="2"> Deluxe </option>
+                            <option value="3"> Superior Deluxe </option>
+                            <option value="4"> Premier Deluxe  </option>
+                            <option value="5"> Executive Suite </option>
+                            <option value="6"> Junior Suite </option>
+                            <option value="7"> Honeymoon Suite </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label style="color:  whitesmoke; font-size: larger;">Number of persons</label>
+                        <select class="form-control" id="person_number" onchange="finalCost()">
+                            <option value="0"> 0 </option>
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4"> 4 </option>
+                            <option value="5"> 5 </option>
+                        </select>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="color:  whitesmoke; font-size: larger; text-shadow: #7527b0;">Restaurant facilities</label>
+                        <select class="form-control" id="res_facilities" onchange="finalCost()">
+                            <option value="0" selected> Do you want restaurant facilities? </option>
+                            <option value="2"> Yes </option>
+                            <option value="0"> No </option>
+                        </select>
+                    </div><br>
+                    <button type="submit" value="Submit" style="border-radius: 10px; background-color: black; border-color: red; color: lavenderblush;">Submit</button>        
+                </form>
+            </div>          
+        </div>
+        
+      <section class="features1 cid-qwYHOWvXyr mbr-parallax-background" id="features1-6" data-rv-view="355">
+        <div class="mbr-overlay" style="opacity: 0.6; background-image: url(images/water.jfif);">
+        </div>
+        <div class="container">
+            <div class="media-container-row">
+                <div class="card p-3 col-12 col-md-6 col-lg-4">
+                    <div class="card-img pb-3">
+                        <span class="mbr-iconfont mbri-hearth" style="color: rgb(15, 118, 153);" media-simple="true"></span>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title py-3 mbr-fonts-style display-5">
+                            5 Stars Vacation</h4>
+                        <p class="mbr-text mbr-fonts-style display-7" style="color: white;">
+                            The area is located in one of the most picturesque and ecologically clean areas.
+                        </p>
+                    </div>
+                </div>
+                <div class="card p-3 col-12 col-md-6 col-lg-4">
+                    <div class="card-img pb-3">
+                        <span class="mbr-iconfont mbri-users" style="color: rgb(15, 118, 153);" media-simple="true"></span>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title py-3 mbr-fonts-style display-5">Hotel Services</h4>
+                        <p class="mbr-text mbr-fonts-style display-7" style="color: white;">
+                        Our advantage is the close proximity to the international airport.
+                        </p>
+                    </div>
+                </div>
+                <div class="card p-3 col-12 col-md-6 col-lg-4">
+                    <div class="card-img pb-3">
+                        <span class="mbr-iconfont mbri-magic-stick" style="color: rgb(15, 118, 153);" media-simple="true"></span>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title py-3 mbr-fonts-style display-5">Registration</h4>
+                        <p class="mbr-text mbr-fonts-style display-7" style="color: white;">Every morning our guests can have a delicious breakfast in the hotel restaurant.<br></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+      </section>
+
+      <section>
+        <div id="description">
+            <div id="description-image">
+            <img src="images/table.jfif" height="80%" width="90%">
+            </div>
+            
+            <div id="description-text">
+                <h2 style="text-align: center; color: red; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Description and Services</h2>
+                <p>
+                    Located on the hills of Nice, a short distance from the famous
+                    Promenade des Anglais, Hotel Anis is one of the hotels in the Costa Azzurra (or Blue Coast) able to satisfy the different needs of
+                    its guests with comfort and first rate services.
+                    The hotel has a large parking area , a real luxury in a city like Nice
+                    <br><br>        
+                    The spacious rooms of this beautiful Mediterranean residence offer the possibility of enjoying a rich breakfast buffet on the splendid outdoor terrace where guests may continue to enjoy frequent sunny days and mild temperature, even during the winter months.
+                    <br><br>
+                    If you are looking for peace and tranquillity after days spent walking amongst the city streets or under the sun, the Hotel Anis of Nice offers refreshments in its refined indoor rooms. The lounge bar, open 24 hours a day and the restaurant, available for grand wedding events are all in elegant air conditioned rooms. The restaurant service is also available on the terrace.
+                    <br><br>
+                    The hotel’s reception is open 24 hours a day and offers booking services for guided tours to Monte Carlo, Saint Paul de Vence and excursions by boat towards Antibes and Cannes or to the nearby Isola 2000 ski resorts.            
+                </p>
+            </div>
+            
+        </div>
+      </section>
+
+      <section class="features3 cid-qwYWjewzYp mbr-parallax-background" id="features3-a" data-rv-view="363">
+        <div class="mbr-overlay" style="opacity: 0.8; background-image: url(images/beach.jpg);"></div>        
+        <div class="container">
+            <div class="media-container-row">
+                <div class="card p-3 col-12 col-md-6 col-lg-4">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <img src="images/smallchops.jpg" alt="Mobirise" title="" media-simple="true">
+                        </div>
+                        <div class="card-box">
+                            <h4 class="card-title mbr-fonts-style display-5">Hotel Restaurant</h4>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                            The hotel offers services of excellent quality.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+        <div class="card p-3 col-12 col-md-6 col-lg-4">
+            <div class="card-wrapper">
+                <div class="card-img">
+                    <img src="images/bed.jfif" alt="Mobirise" title="" media-simple="true">
+                </div>
+                <div class="card-box">
+                    <h4 class="card-title mbr-fonts-style display-5">
+                        Explore Facilities</h4>
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        Also the hotel has the possibility of parking a car.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="card p-3 col-12 col-md-6 col-lg-4">
+            <div class="card-wrapper">
+                <div class="card-img">
+                    <img src="images/shower.jfif" alt="Mobirise" title="" media-simple="true">
+                </div>
+                <div class="card-box">
+                    <h4 class="card-title mbr-fonts-style display-5">
+                        Close to City Hall</h4>
+                    <p class="mbr-text mbr-fonts-style display-7">Free Wi-Fi, a 24-hour reception, excellent cuisine in the restaurant.<br></p>
+                </div>
+                
+            </div>
+        </div>            
+        </div>
+        </div>
+      </section>
+
+      <section class="mbr-section article content1 cid-qx00J4nxrD" id="content1-l" data-rv-view="366">
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 col-md-8 mbr-fonts-style display-7">We offer our guests homeliness and high-quality service. On the territory there is a small cafe with ice cream.</div>
+            </div>
+        </div>
+      </section>
+
+      <section class="cid-qwZh7FHlul" id="image4-c" data-rv-view="367">
+        <!-- Block parameters controls (Blue "Gear" panel) -->
+        
+        <!-- End block parameters -->
+        <div class="container images-container">
+                <div class="media-container-row" style="width: 97%;">
+                    <div class="img-item item1" style="width: 102%;">
+                        <img src="images/guy.jfif" alt="" title="" media-simple="true">
+                        
+                    </div>
+                    <div class="img-item">
+                        <img src="images/bar.jfif" alt="" title="" media-simple="true">
+                        
+                    </div>
+                </div>
+        </div>
+      </section>
+
+      <section class="testimonials1 cid-qwZTMOGygl" id="testimonials1-g" data-rv-view="369">
+        <div class="mbr-overlay" style="opacity: 0.5; background-image: url(images/bs2.jfif);"> </div>
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 align-center">
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-3 mt-2">
+            <div class="media-container-row">
+                <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
+                    <div class="panel-item p-3">
+                        <div class="card-block">
+                            <div class="testimonial-photo">
+                                <img src="images/lady.jpg" alt="" title="" media-simple="true">
+                            </div>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                            Room is clean, new furniture, towels changed every day. Breakfast is quite tasty and varied. A lot of public transport goes directly to the hotel.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">
+                                Judith</div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
+                    <div class="panel-item p-3">
+                        <div class="card-block">
+                            <div class="testimonial-photo">
+                                <img src="images/male.jpg" alt="" title="" media-simple="true">
+                            </div>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                            The room is large, spacious. But the mattress is very hard. Also positve is the fact that the room was on the second floor and the windows overlook the kitchen, which visitors are allowed to view the makings of the tasty foods being made.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">
+                                Barry</div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mbr-testimonial p-3 align-center col-12 col-md-6 col-lg-4">
+                    <div class="panel-item p-3">
+                        <div class="card-block">
+                            <div class="testimonial-photo">
+                                <img src="images/female.jpg" alt="" title="" media-simple="true">
+                            </div>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                            Housekeeping leaves much to be desired, the maid if interested in daily cleaning is necessary, and cleaned every day.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="mbr-author-name mbr-bold mbr-fonts-style display-7">
+                                Kate</div>
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>   
+</section>
+
+
+
+      <section class="header3 cid-qx01lkaQs2" id="header3-m" data-rv-view="372">
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-figure" style="width: 100%;">
+                    <img src="images/bar.jfif" alt="Mobirise" title="" media-simple="true">
+                </div>
+
+                <div class="media-content">
+                    <h2 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-2">
+                        Our restaurant</h2>
+                    
+                    <div class="mbr-section-text mbr-white pb-3 ">
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            The restaurant managed to consolidate its positions thanks to the invariably irreproachable service and quality of the kitchen - several times it was awarded the title of the best restaurant...
+                        </p>
+                    </div>
+                    <div class="mbr-section-btn"><a class="btn btn-md btn-black display-4" href="#">Make a reservation</a></div>
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+      <section class="map1 cid-qwZjgFiPIw" id="map1-d" data-rv-view="375">
+        <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJKeolKLq5yhQRMwMa7bv2Aqo" allowfullscreen=""></iframe></div>
+      </section>
+
+      <section class="features4 cid-qwZfqTbuWt mbr-parallax-background" id="features4-b" data-rv-view="377">
+        <div class="mbr-overlay" style="opacity: 0.7; "></div>
+        <div class="container">
+            <div class="media-container-row">
+                <div class="card p-3 col-12 col-md-6 col-lg-4">
+                    <div class="card-wrapper media-container-row media-container-row">
+                        <div class="card-box">
+                            <h4 class="card-title pb-3 mbr-fonts-style display-5">
+                                About us</h4>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                Ideal place for family accommodation and for those who appreciate comfort and democratic prices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-3 col-12 col-md-6 col-12 col-md-6 col-lg-4">
+                    <div class="card-wrapper media-container-row">
+                        <div class="card-box">
+                            <h4 class="card-title pb-3 mbr-fonts-style display-5">Our contacts</h4>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                +1 234 567 89 12<br>Address:&nbsp;1855 Brannon Avenue,&nbsp;Jacksonville,&nbsp;FL<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-3 col-12 col-md-6 col-lg-4">
+                    <div class="card-wrapper media-container-row">
+                        <div class="card-box">
+                            <h4 class="card-title pb-3 mbr-fonts-style display-5">Directions</h4>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                            The hotel is located in the immediate vicinity of the park. Rooms with a view over the sea...<br><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+    
+  </body>
+
+
+
+</html>

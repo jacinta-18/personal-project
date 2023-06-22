@@ -1,0 +1,443 @@
+<DOCTYPE>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Saheeto Hotel</title>
+        <!-- Font Awesome -->
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"> -->
+        <!-- Bootstrap core CSS -->
+        <!-- <link rel="stylesheet" href="mobirise-icons/mobirise-icons.css"> -->
+        <link rel="stylesheet" href="tether/tether.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="dropdown/css/style.css">
+        <link rel="stylesheet" href="theme/css/style.css">
+        <link rel="stylesheet" href="mobirise/css/mbr-additional.css" type="text/css">
+        
+
+    <style type="text/css">
+        html,
+        body,
+        header,
+        .view {
+        height: 100%;
+        }
+
+        @media (max-width: 740px) {
+
+        html,
+        body,
+        header,
+        .view {
+            height: 1050px;
+        }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+
+        html,
+        body,
+        header,
+        .view {
+            height: 700px;
+        }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+        .navbar:not(.top-nav-collapse) {
+            background: #1C2331 !important;
+        }
+        }
+
+
+        .section {
+            position: relative;
+            height: 100vh;
+        
+        }
+
+        .section .section-center {
+            position: absolute;
+            top: 60%;
+            left: 0;
+            right: 0;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        } 
+
+        #booking {
+            font-family: 'Raleway', sans-serif;
+            
+            background-image: url('images/full.jpg');
+        }
+
+        .booking-form {
+            position: relative;
+            max-width: 642px;
+            width: 100%;
+            margin: auto;
+            padding: 40px;
+            overflow: hidden;
+            background-size: cover;
+            border-radius: 5px;
+            z-index: 20;
+            ;
+        }
+
+        .booking-form::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        .booking-form .form-header {
+            text-align: center;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .booking-form .form-header h1 {
+            font-weight: 700;
+            text-transform: capitalize;
+            font-size: 42px;
+            margin: 0px;
+            color: #fff;
+        }
+
+        .booking-form .form-group {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .booking-form .form-control {
+            background-color: rgba(255, 255, 255, 0.2);
+            height: 60px;
+            padding: 0px 25px;
+            border: none;
+            border-radius: 40px;
+            color: #fff;
+            -webkit-box-shadow: 0px 0px 0px 2px transparent;
+            box-shadow: 0px 0px 0px 2px transparent;
+            -webkit-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        .booking-form .form-control::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .booking-form .form-control:-ms-input-placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .booking-form .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .booking-form .form-control:focus {
+            -webkit-box-shadow: 0px 0px 0px 2px #ff8846;
+            box-shadow: 0px 0px 0px 2px #ff8846;
+        }
+
+        .booking-form input[type="date"].form-control {
+            padding-top: 16px;
+        }
+
+        .booking-form input[type="date"].form-control:invalid {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .booking-form input[type="date"].form-control+.form-label {
+            opacity: 1;
+            top: 10px;
+        }
+
+        .booking-form select.form-control {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .booking-form select.form-control:invalid {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .booking-form select.form-control+.select-arrow {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 32px;
+            line-height: 32px;
+            height: 32px;
+            text-align: center;
+            pointer-events: none;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+        }
+
+        .booking-form select.form-control+.select-arrow:after {
+            content: '\279C';
+            display: block;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+
+        .booking-form select.form-control option {
+            color: #000;
+        }
+
+        .booking-form .form-label {
+            position: absolute;
+            top: -10px;
+            left: 25px;
+            opacity: 0;
+            color: #ff8846;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            height: 15px;
+            line-height: 15px;
+            -webkit-transition: 0.2s all;
+            transition: 0.2s all;
+        }
+
+        .booking-form .form-group.input-not-empty .form-control {
+            padding-top: 16px;
+        }
+
+        .booking-form .form-group.input-not-empty .form-label {
+            opacity: 1;
+            top: 10px;
+        }
+
+        .booking-form .submit-btn {
+            color: #fff;
+            background-color: #e35e0a;
+            font-weight: 700;
+            height: 60px;
+            padding: 10px 30px;
+            width: 100%;
+            border-radius: 40px;
+            border: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 1.3px;
+            -webkit-transition: 0.2s all;
+            transition: 0.2s all;
+        }
+
+        .booking-form .submit-btn:hover,
+        .booking-form .submit-btn:focus {
+            opacity: 0.9;
+        }
+        </style>
+
+      </head>
+<body>	
+    <section class="menu cid-qwYGTl41gN" once="menu" id="menu1-5" data-rv-view="350">
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+          <div class="container">
+              <a target="_top" href="#" style="font-weight: 900; font-size: 40px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Saheeto Suites</a> 
+               <br/>
+                   <!-- Right --> 
+                   <ul class="navbar-nav nav-flex-icons"> 
+                      <li class="nav-item active">
+                           <a class="nav-link" href="Saheeto.html"  style="color: red;">Home
+                             <span class="sr-only">(current)</span>
+                           </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="about.html" target="_blank" style="color: red;">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="book a room.html" target="_blank"  style="color: red;">
+                          Book A Room</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="small chops.html" target="_blank"  style="color: red;">Order Small Chops</a>
+                      </li>
+                   </ul>                          
+          </div>
+        </nav> 
+        <!-- Navbar -->
+        </section>
+           
+             <!-- Full Page Intro -->
+            <section>
+               
+            <div id="booking" class="section">
+                <div class="section-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="booking-form">
+                                <div class="form-header">
+                                    <h1>Make your reservation</h1>
+                                </div>
+                                <form>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Barry Bhrown">
+                                        <span class="form-label">Full Name</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input class="form-control" type="date" required>
+                                                <span class="form-label">Check In</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input class="form-control" type="date" required>
+                                                <span class="form-label">Check out</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <select class="form-control" required>
+                                                    <option value="" selected hidden>no of rooms</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                                <span class="form-label">Rooms</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <select class="form-control" required>
+                                                    <option value="" selected hidden>no of adults</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                                <span class="form-label">Adults</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <select class="form-control" required>
+                                                    <option value="" selected hidden>no of children</option>
+                                                    <option>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                                <span class="form-label">Children</span>
+                                            </div>
+                                            </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input class="form-control" type="email" placeholder="Enter your Email">
+                                                <span class="form-label">Email</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input class="form-control" type="tel" placeholder="Enter you Phone">
+                                                <span class="form-label">Phone</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-btn">
+                                        <button class="submit-btn">Book Now</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+    
+         
+    <section class="features4 cid-qwZfqTbuWt mbr-parallax-background" id="features4-b" data-rv-view="377" >
+
+        <div class="mbr-overlay" style="opacity: 0.7; ">
+        </div>
+        <div class="container">
+            <div class="media-container-row">
+                <div class="card p-3 col-12 col-md-6 col-lg-4">
+                    <div class="card-wrapper media-container-row media-container-row">
+                        <div class="card-box">
+                            <h4 class="card-title pb-3 mbr-fonts-style display-5">
+                                About us</h4>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                Ideal place for family accommodation and for those who appreciate comfort and democratic prices.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card p-3 col-12 col-md-6 col-12 col-md-6 col-lg-4">
+                    <div class="card-wrapper media-container-row">
+                        <div class="card-box">
+                            <h4 class="card-title pb-3 mbr-fonts-style display-5">Our contacts</h4>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                +1 234 567 89 12<br>Address:&nbsp;1855 Brannon Avenue,&nbsp;Jacksonville,&nbsp;FL<br><br></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card p-3 col-12 col-md-6 col-lg-4">
+                    <div class="card-wrapper media-container-row">
+                        <div class="card-box">
+                            <h4 class="card-title pb-3 mbr-fonts-style display-5">Directions</h4>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                               The hotel is located in the immediate vicinity of the park. Rooms with a view over the sea...<br><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                
+            </div>
+        </div>
+                    
+    
+    </section>
+      
+</body>
+    </html>
+	<!-- <script src="js/jquery.min.js"></script>
+	<script>
+		$('.form-control').each(function () {
+			floatedLabel($(this));
+		});
+
+		$('.form-control').on('input', function () {
+			floatedLabel($(this));
+		});
+
+		function floatedLabel(input) {
+			var $field = input.closest('.form-group');
+			if (input.val()) {
+				$field.addClass('input-not-empty');
+			} else {
+				$field.removeClass('input-not-empty');
+			}
+		}
+    </sc
+    ript>     -->
+</body>
+</html>
+                          
